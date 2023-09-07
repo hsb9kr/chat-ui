@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2441812AA7104900313DC6 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = CC2441802AA7104900313DC6 /* SwiftUIIntrospect */; };
+		CC2441842AA7166100313DC6 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = CC2441832AA7166100313DC6 /* Starscream */; };
+		CC2441872AA716A000313DC6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC2441862AA716A000313DC6 /* Alamofire */; };
+		CC2925C82AA85BE300994683 /* DataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2925C72AA85BE300994683 /* DataWrapper.swift */; };
+		CC2925CA2AA8830400994683 /* SendMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2925C92AA8830400994683 /* SendMessageData.swift */; };
+		CC2925CC2AA8846F00994683 /* ReceiveMessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2925CB2AA8846F00994683 /* ReceiveMessageData.swift */; };
 		CCF38D1D2AA6FB32002033F6 /* ChatUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF38D1C2AA6FB32002033F6 /* ChatUIApp.swift */; };
 		CCF38D1F2AA6FB32002033F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF38D1E2AA6FB32002033F6 /* ContentView.swift */; };
 		CCF38D212AA6FB34002033F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF38D202AA6FB34002033F6 /* Assets.xcassets */; };
 		CCF38D242AA6FB34002033F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF38D232AA6FB34002033F6 /* Preview Assets.xcassets */; };
+		CCF38D2B2AA6FB53002033F6 /* TherapySessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF38D2A2AA6FB52002033F6 /* TherapySessionViewModel.swift */; };
+		CCF38D302AA70625002033F6 /* RiveAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF38D2F2AA70625002033F6 /* RiveAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2925C72AA85BE300994683 /* DataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataWrapper.swift; sourceTree = "<group>"; };
+		CC2925C92AA8830400994683 /* SendMessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageData.swift; sourceTree = "<group>"; };
+		CC2925CB2AA8846F00994683 /* ReceiveMessageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveMessageData.swift; sourceTree = "<group>"; };
 		CCF38D192AA6FB32002033F6 /* ChatUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF38D1C2AA6FB32002033F6 /* ChatUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIApp.swift; sourceTree = "<group>"; };
 		CCF38D1E2AA6FB32002033F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CCF38D202AA6FB34002033F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCF38D232AA6FB34002033F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCF38D2A2AA6FB52002033F6 /* TherapySessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapySessionViewModel.swift; sourceTree = "<group>"; };
+		CCF38D2F2AA70625002033F6 /* RiveAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2441872AA716A000313DC6 /* Alamofire in Frameworks */,
+				CC2441812AA7104900313DC6 /* SwiftUIIntrospect in Frameworks */,
+				CC2441842AA7166100313DC6 /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				CCF38D1C2AA6FB32002033F6 /* ChatUIApp.swift */,
+				CCF38D2A2AA6FB52002033F6 /* TherapySessionViewModel.swift */,
 				CCF38D1E2AA6FB32002033F6 /* ContentView.swift */,
 				CCF38D202AA6FB34002033F6 /* Assets.xcassets */,
 				CCF38D222AA6FB34002033F6 /* Preview Content */,
+				CCF38D2F2AA70625002033F6 /* RiveAnimationView.swift */,
+				CC2925C72AA85BE300994683 /* DataWrapper.swift */,
+				CC2925C92AA8830400994683 /* SendMessageData.swift */,
+				CC2925CB2AA8846F00994683 /* ReceiveMessageData.swift */,
 			);
 			path = ChatUI;
 			sourceTree = "<group>";
@@ -83,6 +104,11 @@
 			dependencies = (
 			);
 			name = ChatUI;
+			packageProductDependencies = (
+				CC2441802AA7104900313DC6 /* SwiftUIIntrospect */,
+				CC2441832AA7166100313DC6 /* Starscream */,
+				CC2441862AA716A000313DC6 /* Alamofire */,
+			);
 			productName = ChatUI;
 			productReference = CCF38D192AA6FB32002033F6 /* ChatUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,11 @@
 				Base,
 			);
 			mainGroup = CCF38D102AA6FB32002033F6;
+			packageReferences = (
+				CC24417F2AA7104900313DC6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				CC2441822AA7166100313DC6 /* XCRemoteSwiftPackageReference "Starscream" */,
+				CC2441852AA716A000313DC6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CCF38D1A2AA6FB32002033F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2925C82AA85BE300994683 /* DataWrapper.swift in Sources */,
+				CC2925CA2AA8830400994683 /* SendMessageData.swift in Sources */,
 				CCF38D1F2AA6FB32002033F6 /* ContentView.swift in Sources */,
+				CCF38D2B2AA6FB53002033F6 /* TherapySessionViewModel.swift in Sources */,
 				CCF38D1D2AA6FB32002033F6 /* ChatUIApp.swift in Sources */,
+				CC2925CC2AA8846F00994683 /* ReceiveMessageData.swift in Sources */,
+				CCF38D302AA70625002033F6 /* RiveAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -275,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +377,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC24417F2AA7104900313DC6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
+		CC2441822AA7166100313DC6 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CC2441852AA716A000313DC6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC2441802AA7104900313DC6 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC24417F2AA7104900313DC6 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		CC2441832AA7166100313DC6 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC2441822AA7166100313DC6 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		CC2441862AA716A000313DC6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC2441852AA716A000313DC6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CCF38D112AA6FB32002033F6 /* Project object */;
 }
